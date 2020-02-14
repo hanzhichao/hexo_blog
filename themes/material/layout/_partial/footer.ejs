@@ -1,0 +1,8 @@
+<% if(theme.footer){ %>
+  <p><%= theme.footer %></p>
+<% } %>
+
+<p>
+  &copy; <%= new Date().getFullYear() %> <a href="<%= config.url %>"><% if (config.author){ %> <%= config.author %> <% } else { %> <%= config.title %> <% } %></a>
+</p>
+<a id="gotop" href="#" title="back to top"><i class="mdi-hardware-keyboard-arrow-up"></i></a>
